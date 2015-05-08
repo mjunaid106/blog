@@ -1,0 +1,22 @@
+﻿<form name="registrationForm" ng-submit="PostRegistrationRequest()">
+    <div class="form">
+        <div class="col-md-5 center-block-no-float">
+            <div class="form-group">
+                <input class="form-control input-lg" placeholder="Username" type="text" ng-model="Username">
+            </div>
+            <div class="form-group">
+                <input class="form-control input-lg" placeholder="Password" type="password" ng-model="Password">
+            </div>
+            <div class="form-group">
+                <input class="form-control input-lg" placeholder="Repeat password" type="password" ng-model="RepeatPassword">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success btn-sm btn-block" type="submit">Sign Up</button>
+                <button class="btn btn-danger btn-sm btn-block">Cancel</button>
+            </div>
+            <div class="form-group">
+                <div class="alert alert-danger" ng-show="Message">{{ Message }}</div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,19 @@
+﻿
+<div class="form" ng-controller="AccountController">
+    <div class="col-md-5 center-block-no-float">
+        <div class="form-group">
+            <input class="form-control input-lg" placeholder="Username" type="text" ng-model="Username">
+        </div>
+        <div class="form-group">
+            <input class="form-control input-lg" placeholder="Password" type="password" ng-model="Password">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success btn-lg btn-block" ng-click="Login()">Sign In</button>
+            <button class="btn btn-primary btn-lg btn-block" ng-click="OpenRegisterDialog()">Sign Up</button>
+            <!--<register-user></register-user>-->
+        </div>
+        <div class="form-group">
+            <div class="alert alert-danger" ng-show="Message">{{ Message }}</div>
+        </div>
+    </div>
+</div>

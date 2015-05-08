@@ -1,0 +1,43 @@
+﻿ <!-- Page Content -->
+<div class="container" ng-controller="DashboardController" ng-init="init()">
+
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+            <!--<h1 class="page-header">
+                Developer's Tip
+                <small>A guide to developers</small>
+            </h1>-->
+            <div ng-repeat="blogPost in BlogPosts | filter:searchBlogs">
+                <h1>
+                    {{ blogPost.Title }}
+                </h1>
+                <hr />
+                <p>
+                    <span class="glyphicon glyphicon-time"></span>
+                    Posted On {{ blogPost.PostedOn }}
+                </p>
+                <hr />
+                <p class="lead">
+                    {{ blogPost.Text }}
+                </p>
+                <br />
+                <br />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well">
+                <h4>Search</h4>
+                <span class="input-group">
+                    <input class="form-control" type="text" ng-model="searchBlogs.Title" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

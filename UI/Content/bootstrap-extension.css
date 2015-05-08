@@ -1,0 +1,10 @@
+﻿.center-block-no-float {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+}
+
+body {
+    padding-top: 65px; 
+}
